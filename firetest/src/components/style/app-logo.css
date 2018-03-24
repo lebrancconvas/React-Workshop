@@ -1,0 +1,14 @@
+.App-logo {
+  animation: App-logo-spin infinite 0.89s linear;
+  height: 20vh;
+  padding: 30px;
+}
+
+.column-padd {
+  background-color: #ff9a35;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
