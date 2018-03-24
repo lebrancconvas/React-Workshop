@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Form from './form.js'
+import Content from './content.js';
 import './App.css';
 
 class App extends Component {
@@ -17,14 +18,6 @@ class App extends Component {
   }
 }
 
-class Content extends Component {
-  render(){
-    return(
-      <div>
-        <p className="App-Content">เว็บนี้รวบรวมความฮาและความขำขันเอาไว้จากทั่วราชอาณาจักร</p>
-      </div>
-    );
-  }
-}
+
 
 export default App;
