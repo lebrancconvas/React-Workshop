@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Header from './components/header.js';
 import Applogo from './components/app-logo.js'
 import Menu from './components/menu.js';
-import Form from './components/form.js'
-import Content from './components/content.js';
 
 
 
