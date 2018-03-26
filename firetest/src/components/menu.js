@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Applogo from './app-logo.js';
 import './style/menu.css';
 
 class Menu extends Component {
   constructor() {
     super();
     this.state = {
-      message:"Please Click on the button to change the word!",
-      image:"./img/PacGosu.png"
+      message:"Character",
+      image:"./img/PacGosu.png",
+      feel:""
     };
     this.changeMessage1 = this.changeMessage1.bind(this);
     this.changeMessage2 = this.changeMessage2.bind(this);
@@ -31,9 +31,17 @@ class Menu extends Component {
     this.setState({message:"Charmander",image:"./img/C.png"});
   }
 
+  onReset(){
+    this.setState({message:"Character",image:"./img/PacGosu.png"})
+  }
+
+  onChange(event){
+    this.setState({feel:event.target.value});
+  }
+
   render() {
     return (
-      <div>
+      <div className="root-element">
         <div className="menu-bar">
           <div className="columns">
             <div className="column has-text-centered">
@@ -51,10 +59,25 @@ class Menu extends Component {
           </div>
         </div>
         <div className="changer">
-          <img src={this.state.image} className="imag" />
+          <img src={this.state.image} className="imag" alt="character"/>
           <p className="text-message">{this.state.message}</p>
+          <p className="field has-addons">
+          <div className="app-play button is-primary" onClick={this.onReset.bind(this)}>
+            <p>
+              Reset
+            </p>
+          </div>
+            <input type="text" className="input is-primary" placeholder="Input your Player Name" onChange={this.onChange.bind(this)} />
+            <div className="app-play button is-primary">
+              <p>
+                Play!
+              </p>
+            </div>
+          </p>
+          <div className="box">
+            <p className="feeling is-large">Player : {this.state.feel} <br />As : {this.state.message}</p>
+          </div>
         </div>
-
       </div>
     );
   }
