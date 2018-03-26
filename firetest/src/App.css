@@ -31,3 +31,11 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+@media (orientation : portrait){
+  div{
+    height: 100%;
+    weight: 100%;
+    object-fit: cover;
+  }
+}
