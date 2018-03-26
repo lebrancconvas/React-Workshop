@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import './style/menu.css';
+
+const Play = () => <h1>play</h1>
 
 class Menu extends Component {
   constructor() {
@@ -39,6 +42,8 @@ class Menu extends Component {
     this.setState({feel:event.target.value});
   }
 
+
+
   render() {
     return (
       <div className="root-element">
@@ -69,9 +74,9 @@ class Menu extends Component {
           </div>
             <input type="text" className="input is-primary" placeholder="Input your Player Name" onChange={this.onChange.bind(this)} />
             <div className="app-play button is-primary">
-              <p>
-                Play!
-              </p>
+                <p>
+                  Play!
+                </p>
             </div>
           </p>
           <div className="box">
