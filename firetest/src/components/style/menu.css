@@ -1,3 +1,36 @@
+.root-element {
+  display: block;
+}
+
+.app-play {
+  width: 10vw;
+}
+
 .menu-bar {
   background-color: black;
+  padding-bottom: 10px;
+}
+
+.changer {
+  background-color: #9e8f76;
+  color: #ffe37f;
+  text-align: center;
+  font-size: 40px;
+  height: 26vh;
+}
+
+
+.feeling {
+  color: black;
+  font-size: 22px;
+}
+
+.imag {
+  padding-top: 20px;
+  height: 23vh;
+}
+
+.text-message {
+  background-color: #e6d4b1;
+  color: black;
 }
